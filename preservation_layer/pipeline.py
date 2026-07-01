@@ -72,10 +72,11 @@ def run_preservation_pipeline(event, trigger_timestamp: float) -> dict:
 
     if result["success"]:
         logger.info("Layer 2 complete — handing to layer 3")
-        # Layer 3 will be wired here once built
-        # from deception_layer.pipeline import run_deception_pipeline
-        # run_deception_pipeline(result)
-        logger.info("*** LAYER 3 WOULD FIRE HERE ***")
+        from deception_layer.pipeline import run_deception_pipeline
+        deception_result = run_deception_pipeline(result)
+        result["stego_path"] = deception_result.get("stego_path")
+        result["decoy_path"] = deception_result.get("decoy_path")
+        
     else:
         logger.error("Preservation failed — layer 3 not triggered")
 

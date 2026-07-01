@@ -232,7 +232,6 @@ class PreservationEngine:
             logger.error("Failed to capture bash history: %s", e)
             with open(output_path, "w") as f:
                 f.write(f"CAPTURE FAILED: {e}\n")
-
     def _capture_logs(self, staging_dir: str) -> None:
         """Copy /var/log contents to staging."""
         log_staging = os.path.join(staging_dir, "var_log")
@@ -261,3 +260,4 @@ class PreservationEngine:
             )
         except Exception as e:
             logger.error("Failed to capture logs: %s", e)
+    

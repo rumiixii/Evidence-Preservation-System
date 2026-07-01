@@ -1,0 +1,10 @@
+PROCESS SNAPSHOT
+Captured: 2026-06-29 14:31:08.619844
+============================================================
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0 168928 11456 ?    Ss   08:01   0:03 /sbin/init
+root           2  0.0  0.0      0     0 ?    S    08:01   0:00 [kthreadd]
+root         445  0.0  0.1  47512  8204 ?    Ss   08:01   0:00 /usr/sbin/sshd
+root         512  0.0  0.0  14856  1832 ?    Ss   08:01   0:00 /usr/sbin/cron
+syslog       521  0.0  0.1 224748  4312 ?    Ssl  08:01   0:00 /usr/sbin/rsyslogd
+root         891  0.0  0.0  72296  3204 ?    Ss   08:01   0:00 /usr/lib/openssh/sftp-server

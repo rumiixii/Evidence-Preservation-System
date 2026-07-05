@@ -1,0 +1,10 @@
+ls -la /var/log
+cat /var/log/syslog
+ps aux
+netstat -tulnp
+who
+last
+df -h
+free -m
+uname -a
+id

@@ -32,6 +32,7 @@ Attacker (Kali Linux VM) → SSH intrusion → deletes /var/log
 
 
 Evidence-Preservation-System/
+
 ├── detection_layer/
 │   ├── daemon.py            # inotify detection daemon - main entry point
 │   ├── event_handler.py     # event classification and trigger logic
@@ -105,16 +106,16 @@ Place a PNG carrier image (minimum 4000x3000 recommended) in "carrier_images/".
 
 ## Running the System
 
-# Activate virtual environment first
+**Activate virtual environment first**
 source venv/bin/activate
 
-# Run all unit tests (27 tests across all three layers)
+**Run all unit tests (27 tests across all three layers)**
 python3 -m pytest tests/ -v
 
-# Run detection layer self-test
+**Run detection layer self-test**
 python3 -m detection_layer.daemon --test
 
-# Start the full daemon (all three layers active)
+**Start the full daemon (all three layers active)**
 python3 -m detection_layer.daemon --verbose
 
 ---

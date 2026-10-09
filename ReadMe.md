@@ -179,5 +179,5 @@ print('HASH MATCH' if original_hash == sha256.hexdigest() else 'MISMATCH')
 
 ## Research Context
 
-Developed as a Bachelor of Science final year project at Strathmore University. Evaluated using Design Science Research methodology with an explanatory sequential mixed methods design. The project contributes a novel integration of inotify-based detection, AES-256 cryptographic preservation, and LSB steganographic concealment into a coordinated real-time evidence preservation architecture.
+Developed as a Bachelor of Science 3rd year project at Strathmore University. Evaluated using Design Science Research methodology with an explanatory sequential mixed methods design. The project contributes a novel integration of inotify-based detection, AES-256 cryptographic preservation, and LSB steganographic concealment into a coordinated real-time evidence preservation architecture.
 
